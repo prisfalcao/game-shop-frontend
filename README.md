@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# Game Shop Frontend
+## Descrição do Projeto:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+O Game Shop Frontend traz uma interface para interagir com a [Game Shop API](https://github.com/prisfalcao/game-shop-api) e gerenciar uma loja fictícia de jogos, com opções de listar games no catálogo, adicionar e remover do carrinho, e acessar a área de admin da loja, permitindo a importação de novos games para o catálogo via RAWG API.  
+Essa é a segunda etapa do projeto MVP desenvolvido para a sprint de Desenvolvimento Back-end Avançado do curso de pós-graduação em Desenvolvimento Full Stack da PUC Rio.
 
-## Available Scripts
+## 📋 Funcionalidades
 
-In the project directory, you can run:
+- Página de admin para importar jogos da API RAWG
+- Página de catálogo com jogos à venda
+- Carrinho de compras com opção de remover itens
 
-### `npm start`
+## 🚀 Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React** - Estrutura da interface de usuário.
+- **CSS** - Estilização do layout.
+- **Docker** - Roda a aplicação em container.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ⚙️ Pré-requisitos
 
-### `npm test`
+Antes de iniciar, é necessário ter a [Game Shop API](https://github.com/prisfalcao/game-shop-api) em execução localmente.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Como rodar localmente
 
-### `npm run build`
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/prisfalcao/game-shop-frontend
+   
+2. Acesse o diretório do projeto:
+   ```bash
+      cd game-shop-frontend
+3. No terminal do projeto digite os seguintes comandos:
+    ```bash
+      npm install
+      npm start
+      Acesse em http://localhost:3000.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Como rodar via Docker
+No terminal do projeto digite os seguintes comandos:
+docker build -t game-shop-frontend .
+docker run -p 3000:80 game-shop-frontend      
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🤝 Contribuindo: 
+Contribuições são bem-vindas! Para relatar bugs ou sugerir melhorias, por favor, abra uma issue no repositório.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+--------------------------------------------------------
+# Game Shop Frontend
+## Description
 
-### `npm run eject`
+The Game Shop Frontend was developed to interact with the [Game Shop API](https://github.com/prisfalcao/game-shop-api) and manage a fictitious game shop, with a catalog of games and a shopping cart where the user can add and remove games from the cart.
+This is the second stage of the MVP project developed for Advanced Back-end Development for the Full Stack Development post-graduate course at PUC Rio.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📋 Features
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Admin page to import games from the RAWG API
+- Catalog page with games for sale
+- Shopping cart with option to remove items
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🚀 Technologies Used
 
-## Learn More
+- **React** - User interface structure.
+- **CSS** - Layout styling.
+- **Docker** - Run the application in a container.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## ⚙️ Prerequisites
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Before starting, ensure the [Game Shop API](https://github.com/prisfalcao/game-shop-api) is running locally.
 
-### Code Splitting
+## 🚀 How to run the project locally
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/prisfalcao/game-shop-frontend
 
-### Analyzing the Bundle Size
+2. Go to the project directory:
+   ```bash
+      cd game-shop-frontend
+3. On your project's terminal execute the following commands:
+    ```bash
+      npm install
+      npm start
+      Open http://localhost:3000.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🚀 Running the project on Docker:
+On your project's terminal execute the following commands:
+docker build -t game-shop-frontend .
+docker run -p 3000:80 game-shop-frontend   
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 🤝 Contributing: 
+Contributions are welcome! To report bugs or suggest improvements, please open an issue in the repository.
