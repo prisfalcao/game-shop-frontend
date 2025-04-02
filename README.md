@@ -6,9 +6,11 @@ Essa é a segunda etapa do projeto MVP desenvolvido para a sprint de Desenvolvim
 
 ## 📋 Funcionalidades
 
-- Página de admin para importar jogos da API RAWG
+- Página de admin para importar jogos da API RAWG.io, adicionar jogos manualmente, editar e deletar jogos.
 - Página de catálogo com jogos à venda
 - Carrinho de compras com opção de remover itens
+
+  As rotas de POST(import e add game), PUT(edit game) e DELETE da área de admin requerem um token para serem executadas. O token é: admin-secret-token
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -36,9 +38,11 @@ Antes de iniciar, é necessário ter a [Game Shop API](https://github.com/prisfa
       Acesse em http://localhost:3000.
 
 ## 🚀 Como rodar via Docker
-No terminal do projeto digite os seguintes comandos:
-docker build -t game-shop-frontend .
-docker run -p 3000:80 game-shop-frontend      
+1. No terminal do projeto digite os seguintes comandos:
+   ```bash
+   docker build -t game-shop-frontend .
+   docker run -p 3000:80 game-shop-frontend
+   Acesse em http://127.0.0.1:3000   
 
 ### 🤝 Contribuindo: 
 Contribuições são bem-vindas! Para relatar bugs ou sugerir melhorias, por favor, abra uma issue no repositório.
@@ -52,10 +56,11 @@ This is the second stage of the MVP project developed for Advanced Back-end Deve
 
 ## 📋 Features
 
-
-- Admin page to import games from the RAWG API
+- Admin page to import games from the RAWG.io API, add games manually, edit and delete games
 - Catalog page with games for sale
 - Shopping cart with option to remove items
+
+  The routes for POST(import and add game), PUT(edit game) and DELETE in the admin area will require a token to be executed. The token is: admin-secret-token
 
 ## 🚀 Technologies Used
 
@@ -83,9 +88,11 @@ Before starting, ensure the [Game Shop API](https://github.com/prisfalcao/game-s
       Open http://localhost:3000.
 
 ## 🚀 Running the project on Docker:
-On your project's terminal execute the following commands:
-docker build -t game-shop-frontend .
-docker run -p 3000:80 game-shop-frontend   
+1. On your project's terminal execute the following commands:
+   ```bash
+   docker build -t game-shop-frontend .
+   docker run -p 3000:80 game-shop-frontend
+   In your browser access http://127.0.0.1:3000  
 
 ### 🤝 Contributing: 
 Contributions are welcome! To report bugs or suggest improvements, please open an issue in the repository.
