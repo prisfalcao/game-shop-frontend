@@ -46,7 +46,8 @@ const AdminPanel = () => {
 
   const handleEdit = async () => {
     const { game_id, price, stock } = editData;
-    if (!token || !game_id || !price || !stock) return alert("All fields are required for editing.");
+    if (!token) return alert("Admin token is required for editing.");
+    if (!game_id || !price || !stock) return alert("All fields are required for editing.");
     try {
       const formData = new URLSearchParams();
       formData.append('game_id', game_id);
